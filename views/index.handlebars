@@ -1,8 +1,8 @@
-<div class="container justify-content-center">
+<div class="container">
 <h1 class="text-center">Eat-Da-Burger!</h1>
-<img alt="burgerimage" src="../public/assets/burger.png">
-<div class="row">
-<div class="col">
+<img src="../public/assets/burger.png">
+<div class="row justify-content-center">
+<div class="col-sm-6">
 <ol>
   {{#each burgers}}
     {{#unless eaten}}
@@ -12,7 +12,7 @@
 </ol>
 
 </div>
-<div class="col">
+<div class="col-sm-6">
 <h5>Burgers that have been eaten</h5>
 
 <ol>
@@ -32,6 +32,9 @@
     <input type="text" id="burger" name="name">
   </div>
 
-  <button class="justify-content-center" type="submit">Submit</button>
+<div class="text-center">
+  <button type="submit">Submit</button>
+</div>
+
 </form>
 </div>
