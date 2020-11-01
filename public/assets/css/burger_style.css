@@ -1,14 +1,15 @@
 body {
     justify-content: center;
     background: rgb(235, 209, 64);
-  };
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
 
   .container {
     display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto
 
-  };
+  }
   .submit{
 justify-content: center;
   }
@@ -20,8 +21,27 @@ justify-content: center;
     text-align: center;
   }
 
+  button{
+    margin: 10px;
+    background-color: #c4b31d;
+  }
+
   button .submit{
     display: block;
     justify-content: center;
 
+  }
+
+  .burgerimg{
+margin: 10px 10px 20px 10px;
+  }
+
+  .eaten{
+    background-color: lightgray;
+    margin: 10px;
+  }
+
+  .uneaten{
+    text-align: center;
+    list-style-position: inside;
   }

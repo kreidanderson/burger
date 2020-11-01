@@ -1,40 +1,47 @@
 <div class="container">
-<h1 class="text-center">Eat-Da-Burger!</h1>
-<img src="../public/assets/burger.png">
-<div class="row justify-content-center">
-<div class="col-sm-6">
-<ol>
-  {{#each burgers}}
-    {{#unless eaten}}
-      {{> burger/burger-block eaten=true}}
-    {{/unless}}
-  {{/each}}
-</ol>
 
-</div>
-<div class="col-sm-6">
-<h5>Burgers that have been eaten</h5>
+  <h1 class="text-center">Eat-Da-Burger!</h1>
 
-<ol>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burger/burger-block eaten=false}}
-    {{/if}}
-  {{/each}}
-</ol>
-</div>
+  <center><img class="burgerimg text-center"
+      src="https://lh3.googleusercontent.com/proxy/_a4CxI2fRe1QzcHBxPR0Fny4x77H39W0fMKarP21fHrb5AZ_JKUv9KQ7hX0gDM0CvHFEQO-knBhQqtArdisZ-cIyYA"
+      width="150" height="125"></img></center>
 
-</div>
-<form class="create-form">
+  <div class="uneaten row justify-content-center">
+    <div class="col-sm-6">
+      <ol align="middle">
+        {{#each burgers}}
+        {{#unless eaten}}
+        {{> burger/burger-block eaten=true}}
+        {{/unless}}
+        {{/each}}
+      </ol>
 
-  <div class="form-group text-center">
-   <h6>Enter a burger you want to eat and click the "Submit" button</h6>
-    <input type="text" id="burger" name="name">
+    </div>
+
+    <div class="col-sm-6">
+      <h5>Burgers that have been eaten</h5>
+
+      <ol class="eaten">
+        {{#each burgers}}
+        {{#if eaten}}
+        {{> burger/burger-block eaten=false}}
+        {{/if}}
+        {{/each}}
+      </ol>
+    </div>
+
   </div>
+  <form class="create-form">
 
-<div class="text-center">
-  <button type="submit">Submit</button>
-</div>
+    <div class="form-group text-center">
+      <h6>Enter a burger you want to eat and click the "Submit" button</h6>
+      <input type="text" id="burger" name="name">
+    </div>
 
-</form>
+    <div class="text-center">
+      <button type="submit">Submit</button>
+    </div>
+
+  </form>
+
 </div>
