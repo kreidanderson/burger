@@ -1,0 +1,12 @@
+body {
+    /* padding: 5px;
+    margin: 5px; */
+    background: rgb(235, 209, 64);
+  };
+
+  .container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+
+  }
