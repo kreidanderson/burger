@@ -24,8 +24,8 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        name: $("#burger").val().trim(),
-        eaten: $("[name=eaten]:checked").val().trim()
+        type: $("#burger").val().trim(),
+        // eaten: $("[name=eaten]:checked").val().trim()
       };
   
       $.ajax("/api/burgers", {
