@@ -12,7 +12,7 @@ $(function() {
           data: newBurgerState
         }).then(
           function() {
-            console.log("changed burger to", newBurger);
+            // console.log("Added a new burger: ", newBurger);
             location.reload();
           }
         );
@@ -37,17 +37,4 @@ $(function() {
       );
     });
   
-    $(".delete-burger").on("click", function(event) {
-      var id = $(this).data("id");
-  
-      $.ajax("/api/burgers/" + id, {
-        type: "DELETE"
-      }).then(
-        function() {
-          console.log("deleted burger ", id);
-        
-          location.reload();
-        }
-      );
-    });
 });
