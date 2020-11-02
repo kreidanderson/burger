@@ -7,14 +7,12 @@ $(function() {
           eaten: newBurger
         };
     
-        // Send the PUT request.
         $.ajax("/api/burgers/" + id, {
           type: "PUT",
           data: newBurgerState
         }).then(
           function() {
             console.log("changed burger to", newBurger);
-            // Reload the page to get the updated list
             location.reload();
           }
         );
@@ -25,7 +23,7 @@ $(function() {
   
       var newBurger = {
         type: $("#burger").val().trim(),
-        // eaten: $("[name=eaten]:checked").val().trim()
+        
       };
   
       $.ajax("/api/burgers", {
@@ -47,7 +45,7 @@ $(function() {
       }).then(
         function() {
           console.log("deleted burger ", id);
-          // Reload the page to get the updated list
+        
           location.reload();
         }
       );
