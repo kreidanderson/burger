@@ -1,1 +1,9 @@
-# burger
+# Burger App
+
+## Goals
+
+## Process
+
+## Technologies
+
+## 
