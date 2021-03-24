@@ -1,6 +1,6 @@
 var mysql = require("mysql");
 
-if (process.env.JAWSDB_URL){
+if (process.env.JAWSDB_CRIMSON_URL){
   connection = mysql.createConnection(process.env.JAWSDB_CRIMSON_URL)
 }else {
   var connection = mysql.createConnection({
